@@ -1,0 +1,155 @@
+
+body, html {
+		width: 100%; height: 100%;
+		padding: 0; margin: 0;
+}
+
+.sectionTitle {
+		width: 100%;
+		padding: 30px 0;
+
+		font-family: "Times New Roman"; font-size: 40px; color: rgba(0, 0, 0, 0.2); text-align: center;
+}
+
+/* _-_-_-_-_-_-_-_-_-_-_-_-_ Styles for sectionOne _-_-_-_-_-_-_-_-_-_-_-_-_ */
+
+#sectionOne {
+		width: 100%; height: 100%;
+		box-shadow: 0 6px 12px rgba(0, 0, 0, .2);
+}
+
+#sectionOne .linksContainer {
+		padding: 0 0 0 50px;
+}
+
+#sectionOne .linksContainer a {
+		text-decoration: none;
+}
+
+#sectionOne .linksContainer a:hover {
+		text-decoration: underline;
+}
+
+/* _-_-_-_-_-_-_-_-_-_-_-_-_ Styles for sectionTwo _-_-_-_-_-_-_-_-_-_-_-_-_ */
+
+#sectionTwo {
+		width: 100%; height: 100%;
+		box-shadow: 0 6px 12px rgba(0, 0, 0, .2);
+}
+
+#sectionTwo .text {
+		padding: 0 0 0 50px;
+		font-family: "Times New Roman"; font-size: 20px; color: blue;
+}
+
+/* _-_-_-_-_-_-_-_-_-_-_-_-_ Styles for sectionnThree _-_-_-_-_-_-_-_-_-_-_-_-_ */
+
+#sectionThree {
+		width: 100%; height: 100%;
+		box-shadow: 0 6px 12px rgba(0, 0, 0, .2);
+}
+
+#sectionThree .text {
+		padding: 0 0 0 50px;
+		font-family: Arial; font-size: 20px; color: orange;
+}
+
+/* _-_-_-_-_-_-_-_-_-_-_-_-_ Styles for sectionFour _-_-_-_-_-_-_-_-_-_-_-_-_ */
+
+#sectionFour {
+		width: 100%; height: 100%;
+		box-shadow: 0 6px 12px rgba(0, 0, 0, .2);
+		overflow: hidden;
+}
+
+#sectionFour .container {
+		position: relative;
+		width: 100%; height: 150px;
+}
+
+#sectionFour .container img.imageClass {
+		position: absolute; left: 5%;
+		height: 100%;
+
+		transition: 3s cubic-bezier(.68,-0.55,.27,1.55);
+}
+
+/* _-_-_-_-_-_-_-_-_-_-_-_-_ Styles for sectionFive _-_-_-_-_-_-_-_-_-_-_-_-_ */
+
+#sectionFive {
+		width: 100%; height: 100%;
+		box-shadow: 0 6px 12px rgba(0, 0, 0, .2);
+}
+
+#sectionFive .videoСontainer {
+		padding: 0 0 0 50px;
+}
+
+/* _-_-_-_-_-_-_-_-_-_-_-_-_ Styles for sectionSix _-_-_-_-_-_-_-_-_-_-_-_-_ */
+
+#sectionSix {
+		width: 100%; height: 100%;
+		box-shadow: 0 6px 12px rgba(0, 0, 0, .2);
+}
+
+#sectionSix .audioСontainer {
+		padding: 0 0 0 50px;
+}
+
+/* _-_-_-_-_-_-_-_-_-_-_-_-_ Styles for sectionSeven _-_-_-_-_-_-_-_-_-_-_-_-_ */
+
+#sectionSeven {
+		width: 100%; height: 100%;
+		box-shadow: 0 6px 12px rgba(0, 0, 0, .2);
+		overflow-y: auto; overflow-x: hidden;
+}
+
+#sectionSeven .topСontainer {
+		width: 700px; margin: 0 auto;
+		overflow: hidden; background-color: rgba(0, 0, 0, 0);
+}
+
+#sectionSeven .topСontainer .insidePicture {
+		float: left;
+		width: 65px; height: 65px;
+
+		background-color: rgba(0, 0, 0, 0.1); background-image: url(../media/zqtmpvqpsw.jpg); background-size: cover; background-position: center center;
+}
+
+#sectionSeven .topСontainer .insideText {
+		float: left; padding: 5px 0 0 15px;
+		font-family: "Arial Black"; font-size: 24pt; color: #548dd4; text-transform: uppercase; font-weight: bold;
+}
+
+#sectionSeven .centerСontainer {
+		width: 700px; margin: 60px auto 0;
+		overflow: hidden; background-color: rgba(0, 0, 0, 0);
+}
+
+#sectionSeven .centerСontainer .columnForPicture {
+		float: left;
+		width: 330px; height: 155px;
+
+		background-color: rgba(0, 0, 0, 0.1); background-image: url(../media/pdymupzvag.jpg); background-size: cover; background-position: center center;
+}
+
+#sectionSeven .centerСontainer .columnForText {
+		float: right;
+		width: 350px;
+		font-family: "Arial"; font-size: 12pt; color: #0f243e; font-weight: bold;
+}
+
+#sectionSeven .centerСontainer .columnForText .styleForTitle {
+		text-align: center; color: #548dd4; font-size: 14pt;
+}
+
+#sectionSeven .centerСontainer .columnForText .styleForLink {
+		display: block;
+		font-size: 14pt; text-align: right; color: #548dd4; font-style: italic; font-weight: normal;
+}
+
+#sectionSeven .bottomСontainer {
+		width: 700px; margin: 0 auto;
+
+		font-family: "Arial"; font-size: 12pt; color: #0f243e;
+}
