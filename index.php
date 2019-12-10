@@ -44,5 +44,5 @@ for ($counter = 0; $counter < count($basic_components); $counter++)
 }
 
 // configuration loading
-include('configuration/main_configuration_file.php');
+include('configuration/configuration_loader.php');
 ?>

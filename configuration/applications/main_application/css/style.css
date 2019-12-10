@@ -1,0 +1,14 @@
+@font-face {
+	font-family: regular_font;
+	src: url(../media/font/roboto/Roboto-Regular.ttf);
+}
+
+body, html {
+    width: 100%; height: 100%;
+    padding: 0px; margin: 0px;
+}
+
+.message {
+    margin: 50px 100px;
+    font-family: regular_font; font-size: 24px; color: rgba(0, 0, 0, 0.875);
+}

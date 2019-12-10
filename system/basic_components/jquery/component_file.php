@@ -1,14 +1,15 @@
 <?php
 class jquery
 {
-    public function use($argument = '3-4-1')
+    public function use()
     {
-        switch ($argument)
-        {
-            case '3-4-1':
-            echo '<script type="text/javascript" src="system/basic_components/jquery/jquery-3-4-1.js"></script>';
-            break;
-        }
+
+echo <<<END
+
+        <script type="text/javascript" src="system/basic_components/jquery/jquery-3-4-1.js"></script>
+
+END;
+
     }
 }
 
