@@ -1,3 +1,8 @@
+<?php
+    $array_background = $initial->scandir('configuration/applications/main_application/media/images/background');
+    $selected_background = array_rand($array_background);
+?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>
@@ -8,8 +13,9 @@
     </head>
 
     <body>
-        <div class="frame">
-			<div class="welcomeBlock"></div>
-		</div>
+        <div style="background-image: url(configuration/applications/main_application/media/images/background/<?=$array_background[$selected_background]; ?>)" class="default_page_setting media_section">
+            <div class="logo"></div>
+            <div class="scrolling_button"></div>
+        </div>
     </body>
 </html>
