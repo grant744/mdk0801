@@ -1,37 +1,131 @@
 @font-face {
-		font-family: regular_font;
-		src: url(../media/font/roboto/Roboto-Regular.ttf);
+	font-family: light_font;
+	src: url(../media/font/roboto/Roboto-Light.ttf);
+}
+
+@font-face {
+	font-family: regular_font;
+	src: url(../media/font/roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+	font-family: bold_font;
+	src: url(../media/font/roboto/Roboto-Bold.ttf);
 }
 
 body, html {
-	    width: 100%; height: 100%;
-	    padding: 0px; margin: 0px;
+	   width: 100%; height: 100%;
+	   padding: 0px; margin: 0px;
+		 background-color: #f2f2f2;
 }
 
-.default_page_setting {
-	  width: 100%; max-width: 1920px;
+.page_setting_1 {
+		/* ratio 16:9 */
+		width: 100%; max-width: 1920px;
 		height: 100%; max-height: 1080px;
-		margin: 0 auto;
+		position: relative; margin: 0 auto;
+
+		background-color: #fff; box-shadow: 0 2px 5px 0 rgba(0,0,0,0.12);
 }
+
+.page_setting_2 {
+		width: 100%; max-width: 1920px;
+		padding: 50px 0 0 0;
+		position: relative; margin: 0 auto;
+
+		background-color: #fff;
+		/* box-shadow: 0 2px 5px 0 rgba(0,0,0,0.12) */
+}
+
+.page_title {
+		padding: 0 0 50px 0;
+		font-family: light_font; font-size: 60px; color: rgba(0, 0, 0, 0.875); text-align: center;
+}
+
+.page_title .blue {
+		display: inline; color: #26ade4;
+}
+
+.page_centering {
+		width: 90%; margin: 0 auto;
+		overflow: hidden;
+}
+
+/* * * * * * * * * * * * * * * styles for .media_section * * * * * * * * * * * * * * */
 
 .media_section {
-		position: relative;
 		background-position: center; background-size: cover;
 }
 
 .media_section .logo {
-		width: 300px; height: 150px;
-		position: absolute; top: 50%; left: 50%; margin: -100px 0 0 -150px;
+		width: 300px; height: 100px;
+		position: absolute; top: 50px; left: 3%;
 		background-image: url(../media/images/white_logo.png); background-position: center; background-size: cover;
 }
 
 .media_section .scrolling_button {
 		width: 50px; height: 50px;
-		position: absolute; bottom: 25px; left: 50%; margin: 0 0 0 -25px;
+		position: absolute; bottom: 50px; left: 50%; margin: 0 0 0 -25px;
 		background-image: url(../media/images/skrolling_icon.gif); background-position: center; background-size: cover;
 		transition: 0.2s linear;
 }
 
 .media_section .scrolling_button:hover {
 		cursor: pointer; opacity: 0.5;
+}
+
+.media_section .title {
+		width: 700px;
+		position: absolute; top: 50%; left: 50%; margin: -100px 0 0 -350px;
+		font-family: bold_font; font-size: 60px; color: #fff; text-align: center;
+		/* background-color: rgba(0, 0, 0, 0.1) */
+}
+
+.media_section .title .light {
+		font-family: light_font;
+}
+
+/* * * * * * * * * * * * * * * style for creating columns * * * * * * * * * * * * * * */
+
+.left_column {
+		width: 40%; float: left;
+		/* background-color: rgba(0, 0, 0, 0.1) */
+}
+
+.left_column .image {
+		width: 400px; height: 400px;
+
+		background-color: #f2f2f2; background-position: center; background-size: 100%;
+		border-radius: 100px; transition: 0.2s linear;
+}
+
+.left_column .image:hover {
+		background-size: 125%;
+}
+
+.right_column {
+		width: 60%;  float: right;
+		/* background-color: rgba(0, 0, 0, 0.2) */
+}
+
+.right_column .text {
+		font-family: light_font; font-size: 30px; color: rgba(0, 0, 0, 0.875);
+}
+
+/* * * * * * * * * * * * * * * additional column styles * * * * * * * * * * * * * * */
+
+.uiandui {
+		background-image: url(../media/images/uxandui.jpg);
+}
+
+.target {
+		background-image: url(../media/images/target.jpg);
+}
+
+
+/* * * * * * * * * * * * * * * styles for .footer * * * * * * * * * * * * * * */
+
+.footer {
+		padding: 50px 0;
+		font-family: light_font; font-size: 60px; color: rgba(0, 0, 0, 0.875); text-align: center;
 }
