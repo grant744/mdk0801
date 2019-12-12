@@ -18,9 +18,11 @@
 
     <body>
         <div style="background-image: url(configuration/applications/main_application/media/images/background/<?=$array_background[$selected_background]; ?>)" class="page_setting_1 media_section">
-            <div class="logo"></div>
-            <div class="title jsid_3">Тематический веб сайт <div class="light">на тему UX&UI</div></div>
-            <div class="scrolling_button jsid_5"></div>
+            <div class="page_centering">
+                <div class="logo"></div>
+                <div class="title jsid_3">Тематический веб сайт <div class="light">на тему UX&UI</div></div>
+                <div class="scrolling_button jsid_5"></div>
+            </div>
         </div>
 
         <div class="page_setting_2">
@@ -59,6 +61,6 @@
             <div class="text jsid_4">Copyright</div>
         </div>
 
-        <div class="page_up"></div>
+        <?=$page_up->insert_button(); ?>
     </body>
 </html>
