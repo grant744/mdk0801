@@ -6,7 +6,7 @@ class jquery
 
 echo <<<END
 
-        <script type="text/javascript" src="system/basic_components/jquery/jquery-3-4-1.js"></script>
+        <script type="text/javascript" src="system/components/jquery/jquery-3-4-1.js"></script>
 
 END;
 

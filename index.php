@@ -32,14 +32,14 @@ class initial
 $initial = new initial;
 
 // setting for errors
-error_reporting(0);
+// error_reporting(0);
 
-// autoload basic components
-$basic_components = $initial->scandir('system/basic_components');
+// autoload components
+$components = $initial->scandir('system/components');
 
-for ($counter = 0; $counter < count($basic_components); $counter++)
+for ($counter = 0; $counter < count($components); $counter++)
 {
-    $component_file_location = 'system/basic_components/'.$basic_components[$counter].'/component_file.php';
+    $component_file_location = 'system/components/'.$components[$counter].'/component_file.php';
     include($component_file_location);
 }
 

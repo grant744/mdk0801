@@ -16,25 +16,14 @@
 body, html {
 	   width: 100%; height: 100%;
 	   padding: 0px; margin: 0px;
-		 background-color: #f2f2f2;
 }
 
 .page_setting_1 {
-		/* ratio 16:9 */
-		width: 100%; max-width: 1920px;
-		height: 100%; max-height: 1080px;
-		position: relative; margin: 0 auto;
-
-		background-color: #fff; box-shadow: 0 2px 5px 0 rgba(0,0,0,0.12);
+		width: 100%; height: 100%; max-height: 1080px;
 }
 
 .page_setting_2 {
-		width: 100%; max-width: 1920px;
-		padding: 50px 0 0 0;
-		position: relative; margin: 0 auto;
-
-		background-color: #fff;
-		/* box-shadow: 0 2px 5px 0 rgba(0,0,0,0.12) */
+		width: 100%; padding: 50px 0 0 0;
 }
 
 .page_title {
@@ -47,8 +36,7 @@ body, html {
 }
 
 .page_centering {
-		width: 90%; height: 100%;
-		position: relative;
+		width: 90%; max-width: 1920px;
 		margin: 0 auto;
 		overflow: hidden;
 }
@@ -56,12 +44,14 @@ body, html {
 /* * * * * * * * * * * * * * * styles for .media_section * * * * * * * * * * * * * * */
 
 .media_section {
-		background-position: center; background-size: cover;
+		width: 100%; height: 100%;
+		position: relative;
+		overflow: hidden; background-position: center; background-size: cover;
 }
 
 .media_section .logo {
-		width: 300px; height: 100px;
-		position: absolute; top: 50px; left: 0;
+		width: 250px; height: 90px;
+		margin: 50px 0 0 0;
 		background-image: url(../media/images/white_logo.png); background-position: center; background-size: cover;
 }
 
@@ -128,6 +118,33 @@ body, html {
 /* * * * * * * * * * * * * * * styles for .footer * * * * * * * * * * * * * * */
 
 .footer {
-		padding: 50px 0;
+		padding: 0 0 50px 0;
 		font-family: light_font; font-size: 60px; color: rgba(0, 0, 0, 0.875); text-align: center;
+}
+
+/* * * * * * * * * * * * * * * styles for .fixed_menu * * * * * * * * * * * * * * */
+
+.fixed_menu {
+		width: 100%;
+		position: fixed; top: -70px;
+
+		overflow: hidden; transition: 0.2s linear; background-color: #fff; border-bottom: 1px solid rgba(0, 0, 0, .125);
+		/* box-shadow: 0 3px 2px -3px #999 */
+		/* border-bottom: 1px solid rgba(0, 0, 0, .125) */
+}
+
+.fixed_menu .logo {
+		width: 26px; height: 26px;
+		float: left; margin: 6px 100px 0 0;
+		background-image: url(../media/images/emblem2.png); background-position: center; background-size: cover;
+}
+
+.fixed_menu .menu_item {
+		padding: 10px 0;
+		float: left; margin: 0 50px 0 0;
+		font-family: light_font; font-size: 15px; color: rgba(0, 0, 0, 0.875); transition: 0.2s linear;
+}
+
+.fixed_menu .menu_item:hover {
+		cursor: pointer; color: #26ade4;
 }

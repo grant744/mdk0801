@@ -1,0 +1,14 @@
+.page_up {
+		position: fixed; bottom: -50px; right: 50px;
+
+		width: 35px; height: 35px;
+
+		transition: 0.2s linear;
+		border-radius: 50%; border: 1px solid rgba(0, 0, 0, .375);
+		background-color: rgba(0, 0, 0, .375); background-image: url(image.png); background-size: cover;
+
+}
+
+.page_up:hover {
+		cursor: pointer;
+}

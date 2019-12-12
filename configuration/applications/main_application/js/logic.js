@@ -43,8 +43,33 @@ function adaptation() {
 adaptation();
 setInterval(adaptation, 500);
 
-var heightR = $(window).height();
+
 
 $('.jsid_5').click(function() {
-    $('body,html').animate({scrollTop: heightR}, 800);
+    $('body,html').animate({scrollTop: $(window).height() - 30}, 800);
 });
+
+
+$(document).ready(function(){
+
+		$(window).scroll(function() {
+				if($(this).scrollTop() > 600) {
+					 	$('.jsid_7').css({
+					 			'top' : '0px'
+					 	});
+				} else {
+					 	$('.jsid_7').css({
+					 			'top' : '-70px'
+					 	});
+				}
+		});
+
+ });
+
+ $('.js_mi_1').click(function() {
+     $('body,html').animate({scrollTop: $(window).height() - 30}, 800);
+ });
+
+ $('.js_mi_2').click(function() {
+     $('body,html').animate({scrollTop: $(window).height() + 550}, 800);
+ });
